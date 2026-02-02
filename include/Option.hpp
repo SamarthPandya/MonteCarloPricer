@@ -17,14 +17,14 @@ public:
 
     /**
      * @brief virtual function for payoff, any child must implement internal logic
-     * @param finalPrice The asset price at maturity (S_T)
-     * @return the value of the option
+     * @param finalPrice asset price at maturity (S_T)
+     * @return value of the option
      */
     virtual double payoff(double finalPrice) const = 0;
 };
 
 /**
- * @brief European call option
+ * @brief european call option
  * payoff = max(S - k, 0) :
  */
 class EuropeanCall : public Option {
@@ -38,7 +38,7 @@ public:
 };
 
 /**
- * @brief European put option
+ * @brief european put option
  * payoff = max(K - S, 0)
  */
 class EuropeanPut : public Option {
