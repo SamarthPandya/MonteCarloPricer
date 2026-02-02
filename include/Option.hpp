@@ -4,7 +4,7 @@
 
 
 /**
- * @brief The Option base class (interface).
+ * @brief Option interface
  */
 class Option {
 public:
