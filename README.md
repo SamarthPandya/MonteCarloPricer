@@ -1,4 +1,4 @@
-# Monte Carlo Option Pricer
+# Monte Carlo Pricer
 
 A high-performance C++ engine designed to price financial derivatives using Monte Carlo simulation. This project demonstrates a modular architecture, separating financial payoffs from stochastic path generation and statistical analysis.
 
