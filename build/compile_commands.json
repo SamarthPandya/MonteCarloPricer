@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I\"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/include\" -g -std=gnu++17 -arch arm64 -o CMakeFiles/quanter.dir/main.cpp.o -c \"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/main.cpp\"",
+  "file": "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/main.cpp",
+  "output": "CMakeFiles/quanter.dir/main.cpp.o"
+}
+]
