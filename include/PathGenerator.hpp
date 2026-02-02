@@ -22,6 +22,7 @@ public:
 
     /**
      * @brief price generation for 1 time step
+     * @return new price after one time step
      */
     virtual double generatePrice() = 0;
 };
