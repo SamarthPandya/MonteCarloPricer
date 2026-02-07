@@ -9,16 +9,18 @@ The project follows the **Standard C++ Project Layout** to ensure modularity, fa
 
 ```text
 MonteCarloPricer/
-├── CMakeLists.txt          # Build system configuration
-├── README.md               # Project documentation
-├── include/                # Header Files (The "What")
-│   ├── Option.hpp          # Abstract base for payoffs (Call, Put, etc.)
-│   ├── PathGenerator.hpp   # Stochastic modeling logic (GBM)
-│   ├── Statistics.hpp      # Statistics gatherer declaration
-│   └── PricerEngine.hpp    # Orchestration & Simulation logic
-├── src/                    # Source Files (The "How")
-│   ├── Statistics.cpp      # Implementation of running statistical tallies
-│   └── PricerEngine.cpp    # Loop execution and discounting logic
-├── tests/                  # Validation
-│   └── test_math.cpp       # Unit tests against Black-Scholes
-└── main.cpp                # Execution entry point and demo
+├── CMakeLists.txt                  # Build system configuration
+├── include/                        # Header Files (The "What")
+│   ├── Option.hpp                  # Abstract base for payoffs (Call, Put, etc.)
+│   ├── PathGenerator.hpp           # Stochastic modeling logic
+│   ├── Statistics.hpp              # Statistics gatherer declaration
+│   ├── GBMPathGenerator.hpp        # Specific Stochastic Model: GBM
+│   └── PricerEngine.hpp            # Orchestration & Simulation logic
+|   
+├── src/                            # Source Files
+│   ├── Statistics.cpp              # Implementation of running statistical tallies
+│   ├── GBMPathGenerator.cpp        # Implementation of GBM
+│   └── PricerEngine.cpp            # Loop execution and discounting logic
+├── tests/                          # Validation
+│   └── test_math.cpp               # Unit tests against Black-Scholes
+└── main.cpp                        # Execution entry point and demo
