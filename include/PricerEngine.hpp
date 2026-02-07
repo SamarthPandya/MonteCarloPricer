@@ -18,6 +18,7 @@ public:
 
     PricerEngine(double riskFreeRate, double timeToExpiry, unsigned long numPaths);
 
+
     /**
      * @brief starting point of simulations
      * @param model model which to use for generating Monte Carlo simulation

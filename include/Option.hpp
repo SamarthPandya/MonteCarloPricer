@@ -15,6 +15,7 @@ public:
      */
     virtual ~Option() = default;
 
+
     /**
      * @brief virtual function for payoff, any child must implement internal logic
      * @param finalPrice asset price at maturity (S_T)
@@ -22,6 +23,7 @@ public:
      */
     virtual double payoff(double finalPrice) const = 0;
 };
+
 
 /**
  * @brief european call option
@@ -38,6 +40,7 @@ public:
         return std::max(spotPrice - strikePrice, 0.0);
     }
 };
+
 
 /**
  * @brief european put option
