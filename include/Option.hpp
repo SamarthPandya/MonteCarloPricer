@@ -29,11 +29,13 @@ public:
  */
 class EuropeanCall : public Option {
 private:
-    double strike;
+    double strikePrice;
 public:
-    explicit EuropeanCall(double K) : strike(K) {}
-    double payoff(double S) const override {
-        return std::max(S - strike, 0.0);
+    explicit EuropeanCall(double K) : strikePrice(K) {}
+
+
+    double payoff(double spotPrice) const override {
+        return std::max(spotPrice - strikePrice, 0.0);
     }
 };
 
@@ -43,10 +45,10 @@ public:
  */
 class EuropeanPut : public Option {
 private:
-    double strike;
+    double strikePrice;
 public:
-    explicit EuropeanPut(double K) : strike(K) {}
-    double payoff(double S) const override {
-        return std::max(strike - S, 0.0);
+    explicit EuropeanPut(double K) : strikePrice(K) {}
+    double payoff(double spotPrice) const override {
+        return std::max(strikePrice - spotPrice, 0.0);
     }
 };
