@@ -15,13 +15,7 @@ public:
     virtual ~PathGenerator() noexcept = default;
 
 
-    /**
-     * @brief generates a price path
-     * @return A vector of doubles representing the asset price over time
-     */
-    virtual std::vector<double> generatePath(int numSteps) const;
 
-    
     /**
      * @brief price generation for 1 time step
      * @return new price after one time step

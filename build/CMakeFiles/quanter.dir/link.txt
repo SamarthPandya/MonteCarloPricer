@@ -1,1 +1,1 @@
-/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/quanter.dir/main.cpp.o -o quanter
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/quanter.dir/main.cpp.o CMakeFiles/quanter.dir/src/Statistics.cpp.o CMakeFiles/quanter.dir/src/GBMPathGenerator.cpp.o CMakeFiles/quanter.dir/src/PricerEngine.cpp.o -o quanter

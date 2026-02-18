@@ -9,9 +9,9 @@
 class PricerEngine {
 
 private:
-    double r;               // risk free rate
-    double T;               // time to maturity in years
-    unsigned long paths;    // number of Monte Carlo Iterations
+    const double r;               // risk free rate
+    const double T;               // time to maturity in years
+    const unsigned long paths;    // number of Monte Carlo Iterations
 
 public:
 

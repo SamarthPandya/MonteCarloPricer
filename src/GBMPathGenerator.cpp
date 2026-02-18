@@ -11,5 +11,4 @@ double GBMPathGenerator::generatePrice() const {
     double diffusion = sigma * std::sqrt(T) * dist(gen);
 
     return S * std::exp(drift + diffusion);
-
 }

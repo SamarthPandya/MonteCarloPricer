@@ -8,6 +8,7 @@ PricerEngine::PricerEngine(double riskFreeRate, double timeToExpiry, unsigned lo
 Statistics PricerEngine::runSimulation(PathGenerator& model, Option& product) const {
 
     Statistics stats;
+    double discountFactor = std::exp(-r * T);
 
     for (unsigned long i = 1; i <= paths; i++) {
 
@@ -15,7 +16,7 @@ Statistics PricerEngine::runSimulation(PathGenerator& model, Option& product) co
 
         double payOff = product.payoff(spotAtMaturity);
 
-        stats.addPrice(payOff);
+        stats.addPrice(payOff * discountFactor);
 
     }
 
