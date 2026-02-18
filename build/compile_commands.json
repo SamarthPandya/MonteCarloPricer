@@ -1,8 +1,74 @@
 [
 {
-  "directory": "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build",
-  "command": "/usr/bin/clang++  -I\"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/include\" -g -std=gnu++17 -arch arm64 -o CMakeFiles/quanter.dir/main.cpp.o -c \"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/main.cpp\"",
-  "file": "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/main.cpp",
-  "output": "CMakeFiles/quanter.dir/main.cpp.o"
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/MonteCarloPricer.dir/main.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/main.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/main.cpp",
+  "output": "CMakeFiles/MonteCarloPricer.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/MonteCarloPricer.dir/src/Statistics.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/Statistics.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/Statistics.cpp",
+  "output": "CMakeFiles/MonteCarloPricer.dir/src/Statistics.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/MonteCarloPricer.dir/src/GBMPathGenerator.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/GBMPathGenerator.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/GBMPathGenerator.cpp",
+  "output": "CMakeFiles/MonteCarloPricer.dir/src/GBMPathGenerator.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/MonteCarloPricer.dir/src/PricerEngine.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/PricerEngine.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/PricerEngine.cpp",
+  "output": "CMakeFiles/MonteCarloPricer.dir/src/PricerEngine.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++ -Dmonte_carlo_pricer_EXPORTS -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -isystem /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include -isystem /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9 -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -o CMakeFiles/monte_carlo_pricer.dir/src/bindings.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/bindings.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/bindings.cpp",
+  "output": "CMakeFiles/monte_carlo_pricer.dir/src/bindings.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++ -Dmonte_carlo_pricer_EXPORTS -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -isystem /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include -isystem /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9 -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -o CMakeFiles/monte_carlo_pricer.dir/src/Statistics.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/Statistics.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/Statistics.cpp",
+  "output": "CMakeFiles/monte_carlo_pricer.dir/src/Statistics.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++ -Dmonte_carlo_pricer_EXPORTS -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -isystem /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include -isystem /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9 -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -o CMakeFiles/monte_carlo_pricer.dir/src/GBMPathGenerator.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/GBMPathGenerator.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/GBMPathGenerator.cpp",
+  "output": "CMakeFiles/monte_carlo_pricer.dir/src/GBMPathGenerator.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++ -Dmonte_carlo_pricer_EXPORTS -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -isystem /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include -isystem /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9 -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -o CMakeFiles/monte_carlo_pricer.dir/src/PricerEngine.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/PricerEngine.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/PricerEngine.cpp",
+  "output": "CMakeFiles/monte_carlo_pricer.dir/src/PricerEngine.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_math.dir/tests/test_math.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/tests/test_math.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/tests/test_math.cpp",
+  "output": "CMakeFiles/test_math.dir/tests/test_math.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_math.dir/src/Statistics.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/Statistics.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/Statistics.cpp",
+  "output": "CMakeFiles/test_math.dir/src/Statistics.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_math.dir/src/GBMPathGenerator.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/GBMPathGenerator.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/GBMPathGenerator.cpp",
+  "output": "CMakeFiles/test_math.dir/src/GBMPathGenerator.cpp.o"
+},
+{
+  "directory": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/test_math.dir/src/PricerEngine.cpp.o -c /Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/PricerEngine.cpp",
+  "file": "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/src/PricerEngine.cpp",
+  "output": "CMakeFiles/test_math.dir/src/PricerEngine.cpp.o"
 }
 ]

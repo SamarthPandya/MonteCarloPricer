@@ -57,13 +57,23 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/samarthpandya134/C++ Projects/MonteCarloPricer"
+CMAKE_SOURCE_DIR = /Users/samarthpandya134/cpp_projects/MonteCarloPricer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build"
+CMAKE_BINARY_DIR = /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/Applications/CMake.app/Contents/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -87,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/CMakeFiles" "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/CMakeFiles /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +127,50 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named quanter
+# Target rules for targets named MonteCarloPricer
 
 # Build rule for target.
-quanter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quanter
-.PHONY : quanter
+MonteCarloPricer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MonteCarloPricer
+.PHONY : MonteCarloPricer
 
 # fast build rule for target.
-quanter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quanter.dir/build.make CMakeFiles/quanter.dir/build
-.PHONY : quanter/fast
+MonteCarloPricer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/build
+.PHONY : MonteCarloPricer/fast
+
+#=============================================================================
+# Target rules for targets named monte_carlo_pricer
+
+# Build rule for target.
+monte_carlo_pricer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monte_carlo_pricer
+.PHONY : monte_carlo_pricer
+
+# fast build rule for target.
+monte_carlo_pricer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/build
+.PHONY : monte_carlo_pricer/fast
+
+#=============================================================================
+# Target rules for targets named test_math
+
+# Build rule for target.
+test_math: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_math
+.PHONY : test_math
+
+# fast build rule for target.
+test_math/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/build
+.PHONY : test_math/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quanter.dir/build.make CMakeFiles/quanter.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +178,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quanter.dir/build.make CMakeFiles/quanter.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,8 +186,146 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/quanter.dir/build.make CMakeFiles/quanter.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/GBMPathGenerator.o: src/GBMPathGenerator.cpp.o
+.PHONY : src/GBMPathGenerator.o
+
+# target to build an object file
+src/GBMPathGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/GBMPathGenerator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/GBMPathGenerator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/GBMPathGenerator.cpp.o
+.PHONY : src/GBMPathGenerator.cpp.o
+
+src/GBMPathGenerator.i: src/GBMPathGenerator.cpp.i
+.PHONY : src/GBMPathGenerator.i
+
+# target to preprocess a source file
+src/GBMPathGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/GBMPathGenerator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/GBMPathGenerator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/GBMPathGenerator.cpp.i
+.PHONY : src/GBMPathGenerator.cpp.i
+
+src/GBMPathGenerator.s: src/GBMPathGenerator.cpp.s
+.PHONY : src/GBMPathGenerator.s
+
+# target to generate assembly for a file
+src/GBMPathGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/GBMPathGenerator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/GBMPathGenerator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/GBMPathGenerator.cpp.s
+.PHONY : src/GBMPathGenerator.cpp.s
+
+src/PricerEngine.o: src/PricerEngine.cpp.o
+.PHONY : src/PricerEngine.o
+
+# target to build an object file
+src/PricerEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/PricerEngine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/PricerEngine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/PricerEngine.cpp.o
+.PHONY : src/PricerEngine.cpp.o
+
+src/PricerEngine.i: src/PricerEngine.cpp.i
+.PHONY : src/PricerEngine.i
+
+# target to preprocess a source file
+src/PricerEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/PricerEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/PricerEngine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/PricerEngine.cpp.i
+.PHONY : src/PricerEngine.cpp.i
+
+src/PricerEngine.s: src/PricerEngine.cpp.s
+.PHONY : src/PricerEngine.s
+
+# target to generate assembly for a file
+src/PricerEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/PricerEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/PricerEngine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/PricerEngine.cpp.s
+.PHONY : src/PricerEngine.cpp.s
+
+src/Statistics.o: src/Statistics.cpp.o
+.PHONY : src/Statistics.o
+
+# target to build an object file
+src/Statistics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/Statistics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/Statistics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/Statistics.cpp.o
+.PHONY : src/Statistics.cpp.o
+
+src/Statistics.i: src/Statistics.cpp.i
+.PHONY : src/Statistics.i
+
+# target to preprocess a source file
+src/Statistics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/Statistics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/Statistics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/Statistics.cpp.i
+.PHONY : src/Statistics.cpp.i
+
+src/Statistics.s: src/Statistics.cpp.s
+.PHONY : src/Statistics.s
+
+# target to generate assembly for a file
+src/Statistics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MonteCarloPricer.dir/build.make CMakeFiles/MonteCarloPricer.dir/src/Statistics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/Statistics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/src/Statistics.cpp.s
+.PHONY : src/Statistics.cpp.s
+
+src/bindings.o: src/bindings.cpp.o
+.PHONY : src/bindings.o
+
+# target to build an object file
+src/bindings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/bindings.cpp.o
+.PHONY : src/bindings.cpp.o
+
+src/bindings.i: src/bindings.cpp.i
+.PHONY : src/bindings.i
+
+# target to preprocess a source file
+src/bindings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/bindings.cpp.i
+.PHONY : src/bindings.cpp.i
+
+src/bindings.s: src/bindings.cpp.s
+.PHONY : src/bindings.s
+
+# target to generate assembly for a file
+src/bindings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/monte_carlo_pricer.dir/build.make CMakeFiles/monte_carlo_pricer.dir/src/bindings.cpp.s
+.PHONY : src/bindings.cpp.s
+
+tests/test_math.o: tests/test_math.cpp.o
+.PHONY : tests/test_math.o
+
+# target to build an object file
+tests/test_math.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/tests/test_math.cpp.o
+.PHONY : tests/test_math.cpp.o
+
+tests/test_math.i: tests/test_math.cpp.i
+.PHONY : tests/test_math.i
+
+# target to preprocess a source file
+tests/test_math.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/tests/test_math.cpp.i
+.PHONY : tests/test_math.cpp.i
+
+tests/test_math.s: tests/test_math.cpp.s
+.PHONY : tests/test_math.s
+
+# target to generate assembly for a file
+tests/test_math.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_math.dir/build.make CMakeFiles/test_math.dir/tests/test_math.cpp.s
+.PHONY : tests/test_math.cpp.s
 
 # Help Target
 help:
@@ -161,10 +335,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... quanter"
+	@echo "... test"
+	@echo "... MonteCarloPricer"
+	@echo "... monte_carlo_pricer"
+	@echo "... test_math"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/GBMPathGenerator.o"
+	@echo "... src/GBMPathGenerator.i"
+	@echo "... src/GBMPathGenerator.s"
+	@echo "... src/PricerEngine.o"
+	@echo "... src/PricerEngine.i"
+	@echo "... src/PricerEngine.s"
+	@echo "... src/Statistics.o"
+	@echo "... src/Statistics.i"
+	@echo "... src/Statistics.s"
+	@echo "... src/bindings.o"
+	@echo "... src/bindings.i"
+	@echo "... src/bindings.s"
+	@echo "... tests/test_math.o"
+	@echo "... tests/test_math.i"
+	@echo "... tests/test_math.s"
 .PHONY : help
 
 

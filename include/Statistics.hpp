@@ -21,18 +21,35 @@ public:
     inline void addPrice(double price) {
         sum += price;
         count++;
-        sum_sq += count * count;
+        sum_sq += price * price;
     }
+
 
     /**
      * @brief mean of all prices
      */
-    inline double getMean() {
-        return count == 0 ? 0.0 : sum / count;
+    inline double getMean() const {
+        return count == 0 ? 0.0 : sum / static_cast<double>(count);
     }
 
+
     /**
-     * @brief standard error, 
+     * @brief variance of all prices
+     */
+    inline double getVariance() const {
+
+        if (count <= 1) {
+            return 0.0;
+        }
+
+        double mean = getMean();
+        return (sum_sq / static_cast<double>(count)) - (mean * mean);
+
+    }
+
+
+    /**
+     * @brief standard error
      */
     double getStdError() const;   // standard error
 

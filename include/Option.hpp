@@ -15,38 +15,43 @@ public:
      */
     virtual ~Option() = default;
 
+
     /**
      * @brief virtual function for payoff, any child must implement internal logic
-     * @param finalPrice The asset price at maturity (S_T)
-     * @return the value of the option
+     * @param finalPrice asset price at maturity (S_T)
+     * @return value of the option
      */
     virtual double payoff(double finalPrice) const = 0;
 };
 
+
 /**
- * @brief European call option
+ * @brief european call option
  * payoff = max(S - k, 0) :
  */
 class EuropeanCall : public Option {
 private:
-    double strike;
+    double strikePrice;
 public:
-    explicit EuropeanCall(double K) : strike(K) {}
-    double payoff(double S) const override {
-        return std::max(S - strike, 0.0);
+    explicit EuropeanCall(double K) : strikePrice(K) {}
+
+
+    double payoff(double spotPrice) const override {
+        return std::max(spotPrice - strikePrice, 0.0);
     }
 };
 
+
 /**
- * @brief European put option
+ * @brief european put option
  * payoff = max(K - S, 0)
  */
 class EuropeanPut : public Option {
 private:
-    double strike;
+    double strikePrice;
 public:
-    explicit EuropeanPut(double K) : strike(K) {}
-    double payoff(double S) const override {
-        return std::max(strike - S, 0.0);
+    explicit EuropeanPut(double K) : strikePrice(K) {}
+    double payoff(double spotPrice) const override {
+        return std::max(strikePrice - spotPrice, 0.0);
     }
 };
