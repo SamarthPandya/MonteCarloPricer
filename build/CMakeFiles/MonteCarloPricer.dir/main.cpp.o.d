@@ -1,5 +1,5 @@
 CMakeFiles/MonteCarloPricer.dir/main.cpp.o: \
-  /Users/samarthpandya134/C++\ Projects/MonteCarloPricer/main.cpp \
+  /Users/samarthpandya134/cpp_projects/MonteCarloPricer/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -791,10 +791,10 @@ CMakeFiles/MonteCarloPricer.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/samarthpandya134/C++\ Projects/MonteCarloPricer/include/Option.hpp \
+  /Users/samarthpandya134/cpp_projects/MonteCarloPricer/include/Option.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
-  /Users/samarthpandya134/C++\ Projects/MonteCarloPricer/include/GBMPathGenerator.hpp \
-  /Users/samarthpandya134/C++\ Projects/MonteCarloPricer/include/PathGenerator.hpp \
+  /Users/samarthpandya134/cpp_projects/MonteCarloPricer/include/GBMPathGenerator.hpp \
+  /Users/samarthpandya134/cpp_projects/MonteCarloPricer/include/PathGenerator.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
@@ -845,5 +845,5 @@ CMakeFiles/MonteCarloPricer.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/samarthpandya134/C++\ Projects/MonteCarloPricer/include/PricerEngine.hpp \
-  /Users/samarthpandya134/C++\ Projects/MonteCarloPricer/include/Statistics.hpp
+  /Users/samarthpandya134/cpp_projects/MonteCarloPricer/include/PricerEngine.hpp \
+  /Users/samarthpandya134/cpp_projects/MonteCarloPricer/include/Statistics.hpp

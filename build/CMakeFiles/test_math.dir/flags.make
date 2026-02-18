@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/include"
+CXX_INCLUDES = -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
 

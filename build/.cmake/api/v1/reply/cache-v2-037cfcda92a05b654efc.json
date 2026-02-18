@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang++"
 		},
 		{
@@ -251,10 +251,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang"
 		},
 		{
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1495,7 +1495,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -1631,7 +1631,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build"
 		},
 		{
 			"name" : "MonteCarloPricer_IS_TOP_LEVEL",
@@ -1655,7 +1655,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer"
 		},
 		{
 			"name" : "PYBIND11_FINDPYTHON",
@@ -1679,7 +1679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-src/include"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include"
 		},
 		{
 			"name" : "PYBIND11_INSTALL",
@@ -1939,7 +1939,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-build"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-build"
 		},
 		{
 			"name" : "pybind11_FOUND",
@@ -1963,7 +1963,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-src/include"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include"
 		},
 		{
 			"name" : "pybind11_INCLUDE_DIRS",
@@ -1975,7 +1975,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-src/include;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9"
 		},
 		{
 			"name" : "pybind11_IS_TOP_LEVEL",
@@ -1999,7 +1999,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-src"
+			"value" : "/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src"
 		}
 	],
 	"kind" : "cache",

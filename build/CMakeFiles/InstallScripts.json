@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/cmake_install.cmake",
-		"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-build/cmake_install.cmake"
+		"/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/cmake_install.cmake",
+		"/Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

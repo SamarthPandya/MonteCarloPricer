@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -Dmonte_carlo_pricer_EXPORTS
 
-CXX_INCLUDES = -I"/Users/samarthpandya134/C++ Projects/MonteCarloPricer/include" -isystem "/Users/samarthpandya134/C++ Projects/MonteCarloPricer/build/_deps/pybind11-src/include" -isystem /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9
+CXX_INCLUDES = -I/Users/samarthpandya134/cpp_projects/MonteCarloPricer/include -isystem /Users/samarthpandya134/cpp_projects/MonteCarloPricer/build/_deps/pybind11-src/include -isystem /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/include/python3.9
 
 CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden
 
